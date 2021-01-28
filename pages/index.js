@@ -1,43 +1,58 @@
-import styled from 'styled-components'
+import React from 'react';
+import { useRouter } from 'next/router';
 import db from '../db.json';
-import Header from '../src/components/Header'
-import Widget from '../src/components/Widget'
-import QuizLogo from '../src/components/QuizLogo'
-import QuizBackground from '../src/components/QuizBackground'
-import QuizContainer from '../src/components/QuizContainer'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import Widget from '../src/components/Widget';
+import QuizLogo from '../src/components/QuizLogo';
+import QuizBackground from '../src/components/QuizBackground';
+import QuizContainer from '../src/components/QuizContainer';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
   return (
-      <QuizBackground backgroundImage={db.bg}>
-        <Header/>
-        <QuizContainer>
-          <QuizLogo />
-          <Widget>
-            <Widget.Header>
-              <h1>{db.title}</h1>
-            </Widget.Header>
-            <Widget.Content>
-              <p>{db.description}</p>
-            </Widget.Content>
-          </Widget>
-          <Widget>
-            <Widget.Header>
-              <h1>Jogo</h1>
-            </Widget.Header>
-            <Widget.Content>
-              <p>A história de Metal Gear Solid se passa em 2005, a sudoeste do Alasca no mar de Bering. Ela se foca em Solid Snake, um soldado ex-aposentado que se infiltra numa instalação de eliminação de armas nucleares para neutralizar uma ameaça terrorista da FOXHOUND, uma unidade de forças especiais.</p>
-            </Widget.Content>
-          </Widget>
-          <Footer />
-        </QuizContainer>
-        <GitHubCorner projectUrl="https://github.com/MMazoni" />
-      </QuizBackground>
+    <QuizBackground backgroundImage={db.bg}>
+      <QuizContainer>
+        <QuizLogo />
+        <Widget>
+          <Widget.Header>
+            <h1>Metal Gear Solid</h1>
+          </Widget.Header>
+          <Widget.Content>
+            <form onSubmit={function (event) {
+              event.preventDefault();
+              router.push(`/quiz?name=${name}`);
+              console.log('Reacting');
+            }}
+            >
+              <p>Teste seu conhecimento sobre um dos maiores jogos de Playstation 1!</p>
+              <input
+                onChange={function (event) {
+                  console.log(event.target.value);
+                  setName(event.target.value);
+                }}
+                placeholder="Seu nome aqui =D"
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar
+                {name}
+              </button>
+            </form>
+          </Widget.Content>
+        </Widget>
+        <Widget>
+          <Widget.Header>
+            <h1>Quizes da galera</h1>
+          </Widget.Header>
+          <Widget.Content>
+            <p>Dá uma olhada nesses quizes incríveis que o pessoal da Imersão Next.js fez</p>
+          </Widget.Content>
+        </Widget>
+        <Footer />
+      </QuizContainer>
+      <GitHubCorner projectUrl="https://github.com/MMazoni" />
+    </QuizBackground>
   );
 }
