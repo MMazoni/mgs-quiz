@@ -1,28 +1,66 @@
 {
     "bg": "https://wallpaperaccess.com/full/1292071.jpg",
     "title": "Quiz Metal Gear Solid",
-    "description": "Teste os seus conhecimentos sobre Metal Gear Solid, melhor jogo do PS1",
+    "description": "Teste seu conhecimento sobre um dos melhores jogo da vida!",
     "questions": [
         {
-            "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-            "title": "Como fazer um seletor por id via CSS?",
-            "description": "Essa é pra aquecer",
-            "answer": 2,
+            "image": "https://media.giphy.com/media/xTiTnmdJZSF4oCx7RS/giphy.gif",
+            "title": "Qual o nome do soldado que Meryl nocauteou em sua cela e roubou suas roupas?",
+            "description": "Foi ludibriado...",
+            "answer": 3,
             "alternatives": [
-                ".elemento",
-                "*elemento",
-                "#elemento",
-                "%elemento"
+                "Pettrovich Madnar",
+                "McDonnell Benedict Miller",
+                "Kyle Schneider",
+                "Johnny Sasaki"
             ]
         },
         {
-            "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-            "title": "Como fazer um background gradiente com css?",
-            "description": "Faz tempo em haha",
+            "image": "https://media.giphy.com/media/lfpwRGOHLZXsA/giphy.gif",
+            "title": "Para salvar o progresso no jogo era neccessário ligar para Mei Ling, qual era a frequência do rádio(codec)?",
+            "description": "140.85 era a do Roy Campbell",
+            "answer": 2,
+            "alternatives": [
+                "140.48",
+                "141.52",
+                "140.96",
+                "141.12"
+            ]
+        },
+        {
+            "image": "https://media.giphy.com/media/3Y3ItzksDm3pC/giphy.gif",
+            "title": "Qual a questão incorreta sobre o projeto Les Enfants Terribles?",
+            "description": "Big boss foi clonado e gerou Solid, Liquid e Solidus Snake",
             "answer": 0,
             "alternatives": [
-                "background: linear-gradient(#e66465, #9198e5);",
-                "background: gradient(#e66465, #9198e5);"
+                "Solidus Snake é o irmão mais velho",
+                "Eles são estéreis e possuem envelhecimento acelerado",
+                "Solid Snake herdou os genes recessivo",
+                "Eva foi a madrasta dos Twins Brothers "
+            ]
+        },
+        {
+            "image": "https://media.giphy.com/media/oePrmT6c3fNsY/giphy.gif",
+            "title": "Em que ano se passa o jogo?",
+            "description": "Mas já passou tudo isso de anos >.<",
+            "answer": 1,
+            "alternatives": [
+                "1999",
+                "2005",
+                "2001",
+                "1994"
+            ]
+        },
+        {
+            "image": "https://media.giphy.com/media/NtPcHTrFW92qQ/giphy.gif",
+            "title": "Qual era a missão de Gray Fox em Outer Heaven?",
+            "description": "Isso foi em 'Metal Gear 2: Solid Snake'",
+            "answer": 3,
+            "alternatives": [
+                "Neutralizar Big Boss",
+                "Auxiliar Solid Snake em sua missão",
+                "Roubar o Metal Gear",
+                "Coletar dados sobre uma arma ultra secreta"
             ]
         }
     ],

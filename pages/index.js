@@ -7,6 +7,8 @@ import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
 export default function Home() {
   const router = useRouter();
@@ -18,27 +20,25 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Metal Gear Solid</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
+            <p>{db.description}</p>
             <form onSubmit={function (event) {
               event.preventDefault();
               router.push(`/quiz?name=${name}`);
               console.log('Reacting');
             }}
             >
-              <p>Teste seu conhecimento sobre um dos maiores jogos de Playstation 1!</p>
-              <input
-                onChange={function (event) {
-                  console.log(event.target.value);
-                  setName(event.target.value);
-                }}
+              <Input
+                name="nomeDoUsuario"
+                onChange={(event) => setName(event.target.value)}
                 placeholder="Seu nome aqui =D"
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar
-                {name}
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
