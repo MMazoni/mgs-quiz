@@ -6,7 +6,7 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import Button from '../src/components/Button';
-import AlternativeForm from '../src/components/AlternativeForm';
+import AlternativesForm from '../src/components/AlternativesForm';
 
 function ResultWidget({ results }) {
   return (
@@ -93,7 +93,7 @@ function QuestionWidget({
           {question.description}
         </p>
 
-        <AlternativeForm
+        <AlternativesForm
           onSubmit={(event) => {
             event.preventDefault();
             setQuestionSubmitted(true);
@@ -138,7 +138,7 @@ function QuestionWidget({
           </Button>
           {isQuestionSubmitted && isCorrect && <p>Você acertou! XD</p>}
           {isQuestionSubmitted && !isCorrect && <p>Você errou! :c</p>}
-        </AlternativeForm>
+        </AlternativesForm>
       </Widget.Content>
     </Widget>
   );
