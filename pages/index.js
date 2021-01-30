@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
@@ -27,7 +28,6 @@ export default function Home() {
             <form onSubmit={function (event) {
               event.preventDefault();
               router.push(`/quiz?name=${name}`);
-              console.log('Reacting');
             }}
             >
               <Input
@@ -42,12 +42,12 @@ export default function Home() {
             </form>
           </Widget.Content>
         </Widget>
+
         <Widget>
-          <Widget.Header>
-            <h1>Quizes da galera</h1>
-          </Widget.Header>
           <Widget.Content>
-            <p>Dá uma olhada nesses quizes incríveis que o pessoal da Imersão Next.js fez</p>
+            <h1>Quizes da Galera</h1>
+
+            <p>lorem ipsum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
         <Footer />

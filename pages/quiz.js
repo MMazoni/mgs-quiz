@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/prop-types */
 import React from 'react';
 import db from '../db.json';
@@ -24,7 +25,6 @@ function ResultWidget({ results }) {
           perguntas
         </p>
         <ul>
-          {console.log(results)}
           {results.map((result, index) => (
             <li key={`result__${index}`}>
               #
@@ -99,9 +99,9 @@ function QuestionWidget({
             setQuestionSubmitted(true);
             setTimeout(() => {
               addResult(isCorrect);
-              onSubmit();
               setQuestionSubmitted(false);
               setSelectedAlternative(undefined);
+              onSubmit();
             }, 2 * 1000);
           }}
         >
@@ -122,7 +122,7 @@ function QuestionWidget({
                   style={{ display: 'none' }}
                   id={alternativeId}
                   name={questionId}
-                  onChange={() => setSelectedAlternative(alternativeIndex)}
+                  onClick={() => setSelectedAlternative(alternativeIndex)}
                   type="radio"
                 />
                 {alternative}
@@ -152,12 +152,10 @@ const screenStates = {
 export default function QuizPage() {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const totalQuestions = db.questions.length;
-  const [results, setResults] = React.useState([true, true, false]);
+  const [results, setResults] = React.useState([]);
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
   const question = db.questions[questionIndex];
-
-  console.log(db.questions.length)
 
   function addResult(result) {
     setResults([

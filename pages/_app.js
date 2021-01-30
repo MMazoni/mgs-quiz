@@ -4,6 +4,9 @@ import db from '../db.json';
 import Header from '../src/components/Header';
 
 const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+
   body {
     margin: 0;
     padding: 0;
