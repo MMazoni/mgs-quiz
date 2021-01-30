@@ -65,7 +65,9 @@
         }
     ],
     "external": [
-        ""
+        "https://alura-quiz-base.abnner13.vercel.app/",
+        "https://ff7quiz.hgf777-br.vercel.app/",
+        "https://naruto-quiz.llofyy.vercel.app/"
     ],
     "theme": {
         "colors": {
