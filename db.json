@@ -1,10 +1,11 @@
 {
-    "bg": "https://wallpaperaccess.com/full/1292071.jpg",
+    "bg": "https://trello-attachments.s3.amazonaws.com/6016a968c467638b0ce39b5d/6016a9e36f52e28eba8423d7/2640af82bd84f2c5b75212def2e0dbb2/bg.jpeg",
     "title": "Quiz Metal Gear Solid",
     "description": "Teste seu conhecimento sobre um dos melhores jogo da vida!",
+    "link": "https://mgs-quiz.mmazoni.vercel.app/",
     "questions": [
         {
-            "image": "https://media.giphy.com/media/xTiTnmdJZSF4oCx7RS/giphy.gif",
+            "image": "https://trello-attachments.s3.amazonaws.com/6016a968c467638b0ce39b5d/6016a9eaf9930275eb4bbd6a/0202c8b709b800ba87279793935bc9f0/image.png",
             "title": "Qual o nome do soldado que Meryl nocauteou em sua cela e roubou suas roupas?",
             "description": "Foi ludibriado...",
             "answer": 3,
@@ -16,22 +17,22 @@
             ]
         },
         {
-            "image": "https://media.giphy.com/media/lfpwRGOHLZXsA/giphy.gif",
+            "image": "https://trello-attachments.s3.amazonaws.com/6016a968c467638b0ce39b5d/6016aec8e5ec7d26a308e389/75c918c3f34c35712829d8ad11613041/image.png",
             "title": "Para salvar o progresso no jogo era neccessário ligar para Mei Ling, qual era a frequência do rádio(codec)?",
-            "description": "140.85 era a do Roy Campbell",
+            "description": "141.12 era a do Hal Emmerich",
             "answer": 2,
             "alternatives": [
                 "140.48",
                 "141.52",
                 "140.96",
-                "141.12"
+                "140.85"
             ]
         },
         {
-            "image": "https://media.giphy.com/media/3Y3ItzksDm3pC/giphy.gif",
+            "image": "https://trello-attachments.s3.amazonaws.com/6016a968c467638b0ce39b5d/6016aef5d02aca3a093a3b17/329a19109723a1a009672a69eaab4fcd/image.png",
             "title": "Qual a questão incorreta sobre o projeto Les Enfants Terribles?",
             "description": "Big boss foi clonado e gerou Solid, Liquid e Solidus Snake",
-            "answer": 1,
+            "answer": 0,
             "alternatives": [
                 "Solidus Snake é o irmão mais velho",
                 "Eles são estéreis e possuem envelhecimento acelerado",
@@ -42,7 +43,7 @@
         {
             "image": "https://media.giphy.com/media/oePrmT6c3fNsY/giphy.gif",
             "title": "Em que ano se passa o jogo?",
-            "description": "Mas já passou tudo isso de anos >.<",
+            "description": "Mas já passou todo esse tempo >.<",
             "answer": 1,
             "alternatives": [
                 "1999",
@@ -62,12 +63,24 @@
                 "Roubar o Metal Gear",
                 "Coletar dados sobre uma arma ultra secreta"
             ]
+        },
+        {
+            "image": "https://trello-attachments.s3.amazonaws.com/6016a968c467638b0ce39b5d/6016b7aabfbe618f64aee45e/11ab13cfcaa0ea34ce47bf3ccb8d7c66/image.png",
+            "title": "Qual era a mecânica para sair do controle mental de Phsyco Mantis?",
+            "description": "Ele ficava falando os jogos que estavam salvos no seu memory card. Bizarro!",
+            "answer": 2,
+            "alternatives": [
+                "Remover o memory card",
+                "Segurar R1 L1 R2 L2 por 5 segundos",
+                "Trocar a porta do controle",
+                "Nada, saía com o tempo"
+            ]
         }
     ],
     "external": [
-        "https://alura-quiz-base.abnner13.vercel.app/",
         "https://ff7quiz.hgf777-br.vercel.app/",
-        "https://naruto-quiz.llofyy.vercel.app/"
+        "https://naruto-quiz.llofyy.vercel.app/",
+        "https://mrrobot-quiz.xandowski.vercel.app/"
     ],
     "theme": {
         "colors": {

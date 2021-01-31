@@ -1,4 +1,3 @@
-import React from 'react';
 import Lottie from 'react-lottie';
 import Widget from '../Widget';
 import animationData from '../../../lotties/spinnerAnimation.json';

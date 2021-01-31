@@ -1,7 +1,3 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable react/prop-types */
-import React from 'react';
-//import db from '../../../db.json';
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
 import Loading from '../../components/Loading';
@@ -15,7 +11,8 @@ function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        Resultado
+        <BackLinkArrow href="/" />
+        <h1>Resultado</h1>
       </Widget.Header>
 
       <Widget.Content>
@@ -118,9 +115,6 @@ function QuestionWidget({
             );
           })}
 
-          {/* <pre>
-            {JSON.stringify(question, null, 4)}
-          </pre> */}
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
@@ -153,16 +147,10 @@ export default function QuizPage({ externalQuestions, externalBackground }) {
     ]);
   }
 
-  // [React chama de: Efeitos || Effects]
-  // React.useEffect
-  // atualizado === willUpdate
-  // morre === willUnmount
   React.useEffect(() => {
-    // fetch() ...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
     }, 1 * 1000);
-  // nasce === didMount
   }, []);
 
   function handleSubmitQuiz() {

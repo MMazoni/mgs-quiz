@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -25,7 +24,6 @@ export default function Input({ onChange, placeholder, ...props }) {
       <InputBase
         placeholder={placeholder}
         onChange={onChange}
-        // eslint-disable-next-line react/jsx-props-no-spreading
         {...props}
       />
     </div>
